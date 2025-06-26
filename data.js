@@ -145,12 +145,3 @@ const data = {
 	success: true,
 	errors: [],
 };
-
-console.log(data.items);
-const items = data.items;
-for (let i = 0; i < items.length; i++) {
-	// console.log(items[i]);
-	if (items[i].price > 3000) {
-		console.log("Price is greater than 1000:", items[i].productName);
-	}
-}

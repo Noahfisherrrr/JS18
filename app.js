@@ -69,4 +69,30 @@ function checkNumbers() {
 const [numLength, numArray] = checkNumbers();
 console.log(numLength);
 console.log(numArray);
-// 6. 
+
+// 6. cheapest product from data.js
+const items = data.items;  
+console.log(items);  
+
+function cheapestItem(items) {
+    if (!items || items.length === 0) return null;
+    return items.reduce((min, item) => (item.price < min.price ? item : min));
+    }
+
+const cheapest = cheapestItem(items);
+console.log("Cheapest item:", cheapest);
+
+// 7.findbyid function
+const users = [
+    { id: "1", name: "Ana" },
+    { id: "2", name: "Giorgi"},
+    { id: "3", name: "Nino" },
+    { id: "4", name: "David" },
+    { id: "5", name: "Mariam" },
+    { id: "6", name: "Irakli" },
+    { id: "7", name: "Salome" }
+];
+function findById(users, id) {
+    return users.find(user => user.id === id);
+}
+console.log(findById(users, "3"));

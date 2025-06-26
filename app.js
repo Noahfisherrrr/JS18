@@ -52,3 +52,21 @@ function convertCurrency() {
     const convertedAmount = amount * currencyRate;
     document.getElementById("currencyResult").textContent = `converted amount in GEL: ${convertedAmount}`;
 }
+// 4. uppercase into lowercase
+function convertToLowercase() {
+    const uppercase = "I'M NOAH FISHER, A SOUND ENGINEER FROM GEORGIA AND i CAN'T TYPE UPPERCASE TEXT. LOL";
+    const lowercase = uppercase.toLowerCase();
+    return lowercase;
+}
+console.log(convertToLowercase());
+
+// 5. number array 4 of them is more than 100
+function checkNumbers() {
+    const numbers = [10, 121, 99, 151, 2012, 32, 85, 1095, 75, 312];
+    const moreThan100 = numbers.filter(num => num > 100);
+    return [moreThan100.length,moreThan100,];
+}
+const [numLength, numArray] = checkNumbers();
+console.log(numLength);
+console.log(numArray);
+// 6. 

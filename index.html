@@ -7,10 +7,23 @@
 </head>
 <body>
     <h1>JS 18</h1>
-    <label for="nameInput">Enter your name:</label>
-    <input type="text" id="nameInput" />
-    <button onclick="checkName()">Check</button>
-    <p id="result"></p>
+    <div>
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" />
+        <button onclick="checkName()">Check</button>
+        <p id="result"></p>
+    </div>
+    <div class="currency-container">
+        <label for="currencyInput">Enter amount:</label>
+        <select id="currencySelect">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <input type="number" id="currencyInput" />
+        <button onclick="convertCurrency()">Convert to GEL</button>
+        <p id="currencyResult"></p>
+    </div>
 
     <script src="app.js"></script>
 </body>
